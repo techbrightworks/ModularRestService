@@ -1,0 +1,10 @@
+ModularRestService
+-----------------------------
+1.From the command Line move to ModularRestService directory and build the Project
+2.Build Command: mvn clean install -Dwtpversion=2.0
+3.Deploy and Run the application manually by placing the CalculationServiceWeb.war in the webapps of Tomcat9(Example:apache-tomcat-9.0.17) and Starting the Server
+4.Check the REST API with REST Client
+Example1:http://localhost:8080/CalculationServiceWeb/change/optimal?pence=576
+Example2:http://localhost:8080/CalculationServiceWeb/change/supply?pence=2000
+5.Source Java12
+6.Java9 and Java9+ Modules Usage

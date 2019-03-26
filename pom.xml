@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.srinivas.siteworks</groupId>
+    <artifactId>ModularRestService</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <log4j.version>1.2.17</log4j.version>
+        <spring.version>5.1.5.RELEASE</spring.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>12</maven.compiler.source>
+        <maven.compiler.target>12</maven.compiler.target>
+    </properties>
+
+    <modules>
+        <module>CalculationService</module>
+        <module>CalculationServiceTest</module>
+        <module>CalculationServiceWeb</module>
+        <module>CalculationServiceWebTest</module>
+    </modules>
+
+    <dependencies>
+    </dependencies>
+
+    <build>
+        <finalName>ModularRestService</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <release>12</release>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>
